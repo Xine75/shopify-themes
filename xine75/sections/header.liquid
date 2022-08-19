@@ -52,7 +52,7 @@
             </nav>
             <!---Cart button / Account links if enabled    -->
             <div class="hidden md:flex item-center justify-end md:flex-1 space-x-5">
-                <a href="/cart" class="whitespace-nowrap text-base-gray-500 hover:text-gray-800">
+                <a href="{{ routes.cart_url }}" class="whitespace-nowrap text-base-gray-500 hover:text-gray-800">
                     {% render 'icon-shopping-bag' %}
                 </a>
                 {% if shop.customer_accounts_enabled %}
