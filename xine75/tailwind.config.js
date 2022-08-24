@@ -1,19 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: [],
+  content: [
+    './layout/*.liquid',
+    './templates/*.liquid',
+    './sections/*.liquid',
+    './snippets/*.liquid',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '94': '22rem'
+      }
+    },
   },
   plugins: [],
-  purge: {
-    enabled: false,
-    content: [
-      './layout/*.liquid',
-      './templates/*.liquid',
-      './sections/*.liquid',
-      './snippets/*.liquid',
-    ],
-  },
+
+
+
 }
 
